@@ -1,0 +1,25 @@
+mkdir tabletop && cd tabletop && git init
+Initialized empty Git repository in /home/junior0804/tabletop/.git/
+19:18 ~/tabletop $ tabletop git:master sqlite3 data.sqlite3
+bash: tabletop: command not found
+19:19 ~/tabletop $ git:master sqlite3 data.sqlite3                                                                                                    
+bash: git:master: command not found
+19:20 ~/tabletop $ tabletop git: master sqlite3 data.sqlite3
+bash: tabletop: command not found
+19:44 ~/tabletop $ ls
+19:51 ~/tabletop $ cd 
+19:51 ~ $ cd tabletop
+19:52 ~/tabletop $ ls
+19:52 ~/tabletop $ sqlite3 data.sqlite3
+SQLite version 3.11.0 2016-02-15 17:29:24
+Enter ".help" for usage hints.
+sqlite> create table students (
+   ...> id int primary key not null,
+   ...> last_name char(50) not null,
+   ...> first_name char(50) not null, 
+   ...> email char(50),
+   ...> discord_id char(50)
+   ...> );
+sqlite> .tables
+students
+sqlite> .exit
